@@ -1,8 +1,8 @@
 <template>
   <div>
     <UPageHero
-      title="Nuxt UI Pro - Starter"
-      description="Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive applications in minutes."
+      title="Directus + Nuxt UI Pro"
+      description="A modern headless CMS paired with a beautiful UI framework to create powerful web applications."
       :links="[{
         label: 'Get started',
         to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt',
@@ -10,51 +10,57 @@
         trailingIcon: 'i-lucide-arrow-right',
         size: 'xl'
       }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-pro/starter',
+        label: 'Directus Docs',
+        to: 'https://docs.directus.io',
         target: '_blank',
-        icon: 'i-simple-icons-github',
+        icon: 'i-lucide-database',
         size: 'xl',
         color: 'neutral',
         variant: 'subtle'
       }]"
     />
 
+    <!-- Directus Connection Status Card -->
+    <UContainer class="mt-12">
+      <h2 class="text-3xl font-bold mb-6">Directus Connection</h2>
+      <DirectusStatus />
+    </UContainer>
+
     <UPageSection
       id="features"
-      title="The freedom to build anything"
-      description="Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility."
+      title="The best of both worlds"
+      description="Combine the power of Directus as a headless CMS with the beautiful UI components from Nuxt UI Pro to create modern web applications quickly."
       :features="[{
-        icon: 'i-lucide-wrench',
-        title: 'Fully customizable',
-        description: 'Customize any component through the App Config or fine-tune specific instances with the ui prop, just like Nuxt UI.'
+        icon: 'i-lucide-database',
+        title: 'Headless CMS',
+        description: 'Directus provides a flexible content management system with a powerful API to manage your content.'
       }, {
-        icon: 'i-lucide-square-stack',
-        title: 'Powerful slot system',
-        description: 'Take full control of component layouts and content with Vue\'s comprehensive slot system for maximum flexibility.'
+        icon: 'i-lucide-layout-dashboard',
+        title: 'Beautiful UI Components',
+        description: 'Nuxt UI Pro offers premium components that make it easy to build beautiful and responsive interfaces.'
       }, {
-        icon: 'i-lucide-smartphone',
-        title: 'Mobile-first & responsive',
-        description: 'Built with a mobile-first approach, all components automatically adapt to any screen size while maintaining a polished look.'
+        icon: 'i-lucide-code',
+        title: 'Developer Experience',
+        description: 'TypeScript support, auto-imports, and a well-documented API make development a breeze.'
       }]"
     />
 
     <UPageSection>
       <UPageCTA
-        title="Start with Nuxt UI Pro today!"
-        description="Nuxt UI Pro is free in development, but you need a license to use it in production."
+        title="Build your next project with Directus and Nuxt UI Pro"
+        description="Get started quickly with this powerful combination of headless CMS and beautiful UI components."
         variant="subtle"
         :links="[{
-          label: 'Buy now',
-          to: 'https://ui.nuxt.com/pro/purchase',
+          label: 'Directus Documentation',
+          to: 'https://docs.directus.io',
           target: '_blank',
-          icon: 'i-lucide-shopping-cart',
+          icon: 'i-lucide-database',
           color: 'neutral'
         }, {
-          label: 'License',
-          to: 'https://ui.nuxt.com/getting-started/license',
+          label: 'Nuxt UI Pro',
+          to: 'https://ui.nuxt.com/pro',
           target: '_blank',
-          trailingIcon: 'i-lucide-circle-help',
+          trailingIcon: 'i-lucide-sparkles',
           color: 'neutral',
           variant: 'subtle'
         }]"

@@ -4,6 +4,13 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui-pro'
   ],
+  
+  // Directus runtime config
+  runtimeConfig: {
+    public: {
+      directusUrl: process.env.DIRECTUS_URL || 'http://localhost:8055'
+    }
+  },
 
   devtools: {
     enabled: true
